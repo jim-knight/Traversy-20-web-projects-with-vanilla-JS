@@ -79,6 +79,7 @@ body {
 	font-size: 20px;
 }
 .action-btn.action-btn-big {
+	min-width: 42px;
 	color: #cdc2d0;
 	font-size: 30px;
 }
