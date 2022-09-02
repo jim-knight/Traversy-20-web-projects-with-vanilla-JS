@@ -31,7 +31,7 @@ h1 {
 }
 
 .post {
-	dispay: flex;
+	display: flex;
 	position: relative;
 	width: 80vh;
 	max-width: 800px;
