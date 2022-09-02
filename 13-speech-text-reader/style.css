@@ -50,7 +50,10 @@ select:focus {
 	border-radius: 5px;
 	background-color: #333;
 	color: #fff;
-	transition: all 1s ease-in-out;
+	transition: transform 1s ease-in-out;
+}
+.text-box.show {
+	transform: translate(-50%, 0);
 }
 
 .text-box select {
