@@ -119,3 +119,53 @@ h1 button {
 	font-weight: bold;
 	color: #ddd;
 }
+
+.navigation {
+	display: flex;
+	margin: 20px 0;
+}
+.navigation .nav-button {
+	cursor: pointer;
+	border: 0;
+	background-color: transparent;
+	font-size: 16px;
+}
+.navigation p {
+	margin: 0 25px;
+}
+
+.add-container {
+	z-index: -1;
+	opacity: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 10px 0;
+	background-color: #f0f0f0;
+	border-top: 2px solid #eee;
+	transition: 0.3s ease;
+}
+.add-container.show {
+	z-index: 2;
+	opacity: 1;
+}
+.add-container h3 {
+	margin: 10px 0;
+}
+.form-group label {
+	display: block;
+	margin: 20px 0 10px;
+}
+.form-group textarea {
+	min-width: 500px;
+	max-width: 100%;
+	padding: 12px;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+	font-size: 16px;
+}
