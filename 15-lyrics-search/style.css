@@ -47,3 +47,65 @@ header * {
 header h1 {
 	margin: 0 0 30px;
 }
+
+form {
+	position: relative;
+	width: 500px;
+	max-width: 100%;
+}
+form input {
+	width: 100%;
+	padding: 15px 30px;
+	border: 0;
+	border-radius: 50px;
+	font-size: 16px;
+}
+form button {
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	padding: 13px 30px;
+	background-color: #e056fd;
+	border: 0;
+	border-radius: 50px;
+	color: #fff;
+	font-size: 16px;
+}
+.btn {
+	padding: 4px 10px;
+	background-color: #8d56fd;
+	border: 0;
+	border-radius: 10px;
+	color: #fff;
+}
+
+ul.songs {
+	list-style: none;
+	padding: 0;
+}
+ul.songs li {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 10px 0;
+}
+
+.container {
+	width: 500px;
+	max-width: 100%;
+	margin: 30px auto;
+}
+.container h2 {
+	font-weight: 300;
+}
+.container p {
+	text-align: center;
+}
+.centered {
+	display: flex;
+	justify-content: center;
+}
+.centered button {
+	transform: scale(1.3);
+	margin: 15px;
+}
