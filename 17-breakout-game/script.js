@@ -15,16 +15,17 @@ const ball = {
 	x: canvas.width / 2,
 	y: canvas.height / 2,
 	size: 10,
-	speed: 4,
-	dx: 4,
-	dy: -4,
+	speed: 2,
+	dx: 2,
+	dy: -2,
+	visible: true,
 };
 
 // Create paddle props
 const paddle = {
 	x: canvas.width / 2 - 40,
 	y: canvas.height - 20,
-	w: 80,
+	w: 100,
 	h: 10,
 	speed: 8,
 	dx: 0,
@@ -134,9 +135,33 @@ function moveBall() {
 				) {
 					ball.dy *= -1;
 					brick.visible = false;
+
+					increaseScore();
 				}
 			}
 		});
+	});
+
+	// Hit bottom wall- Lose
+	if (ball.y + ball.size > canvas.height) {
+		showAllBricks();
+		score = 0;
+	}
+}
+
+// Increase score
+function increaseScore() {
+	score++;
+
+	if (score % (brickRowCount * brickColumnCount) === 0) {
+		showAllBricks();
+	}
+}
+
+// Make all bricks appear
+function showAllBricks() {
+	bricks.forEach((column) => {
+		column.forEach((brick) => (brick.visible = true));
 	});
 }
 
