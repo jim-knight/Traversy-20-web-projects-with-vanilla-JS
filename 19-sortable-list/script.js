@@ -18,6 +18,7 @@ function createList() {
 		.map((a) => a.value) // Turned back into an array of strings
 		.forEach((person, index) => {
 			const listItem = document.createElement('li');
+
 			listItem.setAttribute('data-index', index);
 
 			listItem.innerHTML = `
